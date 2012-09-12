@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:background="@color/white" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+<View
+        android:layout_width="fill_parent"
+        android:layout_height="10dp">
+</View>
+<ImageView
+	android:id="@+id/test_image"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:contentDescription="@string/rackspace_slogan"
+	android:src="@drawable/logo_rackspace_large" />
+<View
+        android:layout_width="fill_parent"
+        android:layout_height="10dp">
+</View>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical">
+
+<TextView
+	android:id="@+id/UsernameTV"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="@string/login_username_text"
+	android:textColor="@color/black"
+	android:textSize="@dimen/font_size" >
+
+</TextView>
+
+<EditText
+	android:id="@+id/UsernameET"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:inputType="text"
+	android:text="" >
+
+</EditText>
+</LinearLayout>
+<View
+        android:layout_width="fill_parent"
+        android:layout_height="30dp">
+</View>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical">
+
+<TextView
+	android:id="@+id/PasswordTV"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="@string/login_password_text"
+	android:textColor="@color/black"
+	android:textSize="@dimen/font_size" >
+
+</TextView>
+
+<EditText
+	android:id="@+id/PasswordET"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:inputType="textPassword"
+	android:text="" >
+</EditText>
+</LinearLayout>
+<View
+        android:layout_width="fill_parent"
+        android:layout_height="30dp">
+</View>
+<Button
+	android:id="@+id/SignInButton"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:background="@drawable/login_button"
+	android:paddingLeft="10dp"
+	android:paddingRight="10dp"
+	android:text="@string/login_button_text"
+	android:textColor="@color/white"
+	android:textSize="@dimen/font_size" >
+
+</Button>
+</LinearLayout>

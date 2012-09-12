@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="hello">Hello World, CPTest!</string>
-    <string name="app_name">CPTest</string>
-<string name="auth_url">https://identity.api.rackspacecloud.com/v2.0</string>
-<string name="username"></string>
-<string name="password"></string>
+    <string name="app_name">Cloud Control Panel</string>
+    <string name="login_username_text">Username</string>
+    <string name="login_password_text">Password</string>
+    <string name="login_button_text">Log In</string>
+    <string name="rackspace_slogan">Rackspace: the open cloud company</string>
+	<string name="auth_url">https://identity.api.rackspacecloud.com/v2.0</string>
+	<string name="username"></string>
+	<string name="password"></string>
 </resources>

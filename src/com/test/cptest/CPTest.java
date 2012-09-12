@@ -21,62 +21,60 @@ import org.json.JSONObject;
 
 public class CPTest extends Activity {
     /** Called when the activity is first created. */
-	private Button authButton;
-	private Button listServersButton;
-	private Button getServerButton;
-	private TextView info;
-	private EditText username;
-	private EditText password;
-	private Button signInButton;
-	private String url;
-	
+    private Button authButton;
+    private Button listServersButton;
+    private Button getServerButton;
+    private TextView info;
+    private EditText username;
+    private EditText password;
+    private Button signInButton;
+    private String url;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+        setContentView(R.layout.login);
         username = (EditText)this.findViewById(R.id.UsernameET);
         password = (EditText)this.findViewById(R.id.PasswordET);
         signInButton = (Button)this.findViewById(R.id.SignInButton);
         url = this.getResources().getText(R.string.auth_url).toString();
         signInButton.setOnClickListener(new View.OnClickListener()
-		{
-			public void onClick(View v)
-			{
-				setContentView(R.layout.main2);
-		        authButton = (Button)findViewById(R.id.AuthButton);
-		        listServersButton = (Button)findViewById(R.id.ListServersButton);
-		        getServerButton = (Button)findViewById(R.id.GetServerButton);
-		        info = (TextView)findViewById(R.id.InfoTV);
-		        authButton.setOnClickListener(new View.OnClickListener(){
+        {
+            public void onClick(View v)
+            {
+                setContentView(R.layout.main2);
+                authButton = (Button)findViewById(R.id.AuthButton);
+                listServersButton = (Button)findViewById(R.id.ListServersButton);
+                getServerButton = (Button)findViewById(R.id.GetServerButton);
+                info = (TextView)findViewById(R.id.InfoTV);
+                authButton.setOnClickListener(new View.OnClickListener(){
 
-					public void onClick(View v)
-					{
-						Tester.Holder h = Tester.GetInfo(url, username.getText().toString(), password.getText().toString());
-						String s = "Token: " + h.authToken + "\n\nCloud Servers URL: " + h.productURL;
-						info.setText(s);
-					}
-		        	
-		        });
-		        listServersButton.setOnClickListener(new View.OnClickListener(){
+                    public void onClick(View v)
+                    {
+                        Tester.Holder h = Tester.GetInfo(url, username.getText().toString(), password.getText().toString());
+                        String s = "Token: " + h.authToken + "\n\nCloud Servers URL: " + h.productURL;
+                        info.setText(s);
+                    }
 
-					public void onClick(View v)
-					{
-						Tester.Holder h = Tester.GetInfo(url, username.getText().toString(), password.getText().toString());
-						info.setText(h.listServersBody);
-					}
-		        	
-		        });
-		        getServerButton.setOnClickListener(new View.OnClickListener(){
+                });
+                listServersButton.setOnClickListener(new View.OnClickListener(){
 
-					public void onClick(View v)
-					{
-						Tester.Holder h = Tester.GetInfo(url, username.getText().toString(), password.getText().toString());
-						info.setText(h.serversDetailBody);
-					}
-		        	
-		        });
-			}
-		});
+                    public void onClick(View v)
+                    {
+                        Tester.Holder h = Tester.GetInfo(url, username.getText().toString(), password.getText().toString());
+                        info.setText(h.listServersBody);
+                    }
+                });
+                getServerButton.setOnClickListener(new View.OnClickListener(){
+
+                    public void onClick(View v)
+                    {
+                        Tester.Holder h = Tester.GetInfo(url, username.getText().toString(), password.getText().toString());
+                        info.setText(h.serversDetailBody);
+                    }
+                });
+            }
+        });
 
     }
 
