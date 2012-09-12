@@ -42,7 +42,7 @@ public class CPTest extends Activity {
         {
             public void onClick(View v)
             {
-                setContentView(R.layout.main2);
+                setContentView(R.layout.main);
                 authButton = (Button)findViewById(R.id.AuthButton);
                 listServersButton = (Button)findViewById(R.id.ListServersButton);
                 getServerButton = (Button)findViewById(R.id.GetServerButton);

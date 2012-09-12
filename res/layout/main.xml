@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<View
+        android:layout_width="fill_parent"
+        android:layout_height="10dp">
+</View>
+<Button android:text="Auth" android:id="@+id/AuthButton" style="@style/button"></Button>
+<View
+        android:layout_width="fill_parent"
+        android:layout_height="10dp">
+</View>
+<Button android:text="Get Server List" android:id="@+id/ListServersButton" style="@style/button"></Button>
+<View
+        android:layout_width="fill_parent"
+        android:layout_height="10dp">
+</View>
+<Button android:text="Get Server Details" android:id="@+id/GetServerButton" style="@style/button"></Button>
+<View
+        android:layout_width="fill_parent"
+        android:layout_height="10dp">
+</View>
+<TextView android:text="" android:id="@+id/InfoTV" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+</LinearLayout>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout android:background="@color/white" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout android:background="@color/white" android:paddingLeft="10dp" android:paddingRight="10dp" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
 <View
         android:layout_width="fill_parent"
         android:layout_height="10dp">
@@ -64,16 +64,9 @@
         android:layout_width="fill_parent"
         android:layout_height="30dp">
 </View>
+
 <Button
 	android:id="@+id/SignInButton"
-	android:layout_width="wrap_content"
-	android:layout_height="wrap_content"
-	android:background="@drawable/login_button"
-	android:paddingLeft="10dp"
-	android:paddingRight="10dp"
-	android:text="@string/login_button_text"
-	android:textColor="@color/white"
-	android:textSize="@dimen/font_size" >
-
-</Button>
+	style="@style/button"
+	android:text="@string/login_button_text"/>
 </LinearLayout>
