@@ -11,7 +11,7 @@ import org.apache.http.message.BasicHeader;
 import com.test.cptest.domain.SimpleHttpResponse;
 import com.test.cptest.clients.RestClient;
 
-public class Auth
+public class Auth extends BaseClient
 {
 	private String url;
 	private String username;

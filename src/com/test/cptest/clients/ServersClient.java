@@ -6,12 +6,10 @@ import java.util.ArrayList;
 import org.apache.http.Header;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.message.BasicHeader;
-import org.json.JSONObject;
-import org.json.JSONArray;
 
 import com.test.cptest.domain.SimpleHttpResponse;
 
-public class ServersClient
+public class ServersClient extends BaseClient
 {
 	public static final String SUFFIX = "/servers";
 	private String url;

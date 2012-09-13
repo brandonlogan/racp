@@ -20,7 +20,7 @@ import org.apache.http.client.methods.HttpRequestBase;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
 
-public class RestClient
+public class RestClient extends BaseClient
 {
 	HttpClient client;
 	
